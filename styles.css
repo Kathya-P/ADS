@@ -308,7 +308,18 @@ summary {
     padding: 1.4rem;
   }
 }
+   }
 
+  .topic-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .topic-select,
+  .topic-controls .btn {
+    width: 100%;
+  }
+ }
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -319,3 +330,4 @@ summary {
     transform: translateY(0);
   }
 }
+
