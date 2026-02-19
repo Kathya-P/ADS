@@ -99,6 +99,7 @@ a {
   align-items: center;
   gap: 0.8rem;
   margin-top: 0.2rem;
+  width: 100%;
 }
 
 .topic-label {
@@ -114,6 +115,8 @@ a {
   font-size: 0.95rem;
   background: #fff;
   color: var(--ink);
+  max-width: 100%;
+  min-width: 0;
 }
 
 .quiz-progress {
@@ -240,6 +243,8 @@ a {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .btn:hover {
@@ -307,19 +312,22 @@ summary {
   .card {
     padding: 1.4rem;
   }
-}
-   }
 
   .topic-controls {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: stretch;
   }
 
   .topic-select,
   .topic-controls .btn {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
   }
- }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -330,4 +338,3 @@ summary {
     transform: translateY(0);
   }
 }
-
