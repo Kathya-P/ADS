@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cuestionario - Analisis y Diseño de Sistemas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Analisis y Diseño de Sistemas</p>
+        <h1>Cuestionario de estudio</h1>
+        <p class="lead">
+          Material basado en las presentaciones de la plataforma. Los temas se organizan por temas y puedes configurar el cuestionario para enfocarte en los temas que quieras.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="quiz-app">
+        <div class="quiz-header">
+          <h2 id="topic-title">Tema 1: Requerimientos y dominio del problema</h2>
+          <div class="topic-controls">
+            <label class="topic-label" for="topic-select">Tema</label>
+            <select id="topic-select" class="topic-select" aria-label="Seleccionar tema"></select>
+            <button class="btn ghost" id="shuffle-btn" type="button">Mezclar preguntas</button>
+          </div>
+          <p class="muted">Responde una pregunta por vez y revisa al instante si esta correcta.</p>
+        </div>
+
+        <div class="quiz-progress">
+          <span id="question-count">1 / 1</span>
+          <div class="progress-bar" aria-hidden="true">
+            <div id="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="quiz-body">
+          <div id="question-text" class="question-text"></div>
+
+          <form id="answer-form" class="answer-form">
+            <fieldset id="options-container" class="options" aria-label="Opciones"></fieldset>
+
+            <div id="short-container" class="short-answer hidden">
+              <label for="short-answer">Tu respuesta</label>
+              <textarea id="short-answer" rows="3" placeholder="Escribe tu respuesta..."></textarea>
+            </div>
+          </form>
+
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+
+          <div class="quiz-actions">
+            <button class="btn" id="check-btn" type="button">Revisar</button>
+            <button class="btn ghost" id="show-btn" type="button">Mostrar respuesta</button>
+            <button class="btn ghost" id="prev-btn" type="button">Anterior</button>
+            <button class="btn" id="next-btn" type="button">Siguiente</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Hecho para estudio personal. Actualizado el 2026-02-19 hasta el tema 3.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
